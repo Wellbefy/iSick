@@ -72,6 +72,8 @@ class MailCell: UICollectionViewCell {
         let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneEdit))
         keyboardToolbar.items = [flexBarButton, doneBarButton]
         textView.inputAccessoryView = keyboardToolbar
+        
+        debugPrint("Hej")
     }
     
     @objc func doneEdit() {
